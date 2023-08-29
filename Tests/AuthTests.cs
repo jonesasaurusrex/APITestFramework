@@ -21,7 +21,7 @@ namespace APITestFramework.Tests
                 Username = "admin",
                 Password = "password123"
             };
-            Auth auth = new Auth();
+            AuthEndpoint auth = new AuthEndpoint();
 
             //Act
             var results = auth.Post(authPostPayload);

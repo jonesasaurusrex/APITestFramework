@@ -5,11 +5,11 @@ namespace APITestFramework.Endpoints
     /// <summary>
     /// Class for Ping endpoint, used to confirm whether the API is up and running
     /// </summary>
-    public class Ping
+    public class PingEndpoint
     {
         public const string URL = "https://restful-booker.herokuapp.com/ping";
         private HttpClient _httpClient;
-        public Ping() 
+        public PingEndpoint() 
         {
             _httpClient = new HttpClient();
             _httpClient.BaseAddress = new Uri(URL);

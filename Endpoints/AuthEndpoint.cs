@@ -7,7 +7,7 @@ namespace APITestFramework.Endpoints
     /// <summary>
     /// Class for Auth endpoint, which is used for access to the PUT and DELETE methods for booking endpoint
     /// </summary>
-    public class Auth
+    public class AuthEndpoint
     {
         public const string URL = "https://restful-booker.herokuapp.com/auth";
         public const string DEFAULT_USERNAME = "admin";
@@ -15,7 +15,7 @@ namespace APITestFramework.Endpoints
 
         private HttpClient _httpClient;
 
-        public Auth()
+        public AuthEndpoint()
         {
             _httpClient = new HttpClient();
             _httpClient.BaseAddress = new Uri(URL);

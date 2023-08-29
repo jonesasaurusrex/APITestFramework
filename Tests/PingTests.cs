@@ -4,7 +4,7 @@ using APITestFramework.Endpoints;
 namespace APITestFramework.Tests
 {
     [TestFixture, Order(1)]
-    public class Tests
+    public class PingTests
     {
         [SetUp]
         public void Setup()
@@ -21,7 +21,7 @@ namespace APITestFramework.Tests
             //Arrange
 
             //Act
-            Ping pingEndpoint = new Ping();
+            PingEndpoint pingEndpoint = new PingEndpoint();
 
             //Assert
             Assert.That(pingEndpoint.Get(), Is.EqualTo(HttpStatusCode.Created));
